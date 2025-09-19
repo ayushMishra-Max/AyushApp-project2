@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url(profile.css);
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="page_cover">
+        <div id="profile_box">
+          <div id="profile_pic">
+            <i class="fas fa-user" id="profile_icon"></i>
+            <input type="file" accept="image/*" id="profile_upload" />
+          </div>
+          <p id="upp">Upload Profile Pic</p>
+          <h1 id="profile_name">Default</h1>
+          <button id="next">
+            Next <i class="fas fa-angle-double-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="main_profile_page">
+      <div id="profile_header">
+        <div id="profile_picture"></div>
+      </div>
+      <h1 id="profile_username">Default</h1>
+      <div id="app">
+        <a href="App/contact/contact.html">
+          <div id="contact">
+            <i class="fas fa-address-book"></i>
+            <p>Contact</p>
+          </div></a
+        >
+        <a href="App/player/player.html">
+          <div id="player">
+            <i class="fas fa-play-circle"></i>
+            <p>Player</p>
+          </div></a
+        >
+        <a href="App/Images/image.html">
+          <div id="image">
+            <i class="fa-solid fa-images"></i>
+            <p>Images</p>
+          </div></a
+        >
+        <div id="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <p id="log_out">logout</p>
+        </div>
+      </div>
+    </div>
+    <div id="profile_footer">
+      <p>Devloped by : Ayush kumar mishra</p>
+    </div>
+    <script src="profile.js"></script>
+  </body>
+</html>

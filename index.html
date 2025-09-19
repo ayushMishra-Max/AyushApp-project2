@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url(style.css);
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="page">
+        <div id="log_in" class="animate__animated animate__flipInY">
+          <h1>Log In</h1>
+          <form autocomplete="off" id="log_frm">
+            <input
+              type="email"
+              placeholder="Email id"
+              id="log_email"
+              required
+            />
+            <input type="password" placeholder="Password" id="pwd" required />
+            <button type="submit" id="log_btn">Log In</button>
+          </form>
+          <p>Don't have an account? <span id="sign_link">sign up</span></p>
+        </div>
+        <div id="signup" class="animate__animated animate__flipInY">
+          <h1>Sign up</h1>
+          <form autocomplete="off" id="sign_frm">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="username"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Enter your email id"
+              id="email"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Enter your phone number"
+              id="phone"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="pass"
+              required
+            />
+            <button type="submit" id="sign_btn">Sign up</button>
+          </form>
+          <p>Alredy have an account? <span id="login_link">log in</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

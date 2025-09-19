@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fc466b;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 70, 107, 0.36) 0%,
+    rgba(63, 110, 251, 0.34) 50%
+  );
+}
+#page {
+  width: 300px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 15px;
+  padding: 50px 25px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#log_in h1,
+#signup h1 {
+  text-align: center;
+}
+#log_email,
+#pwd,
+#username,
+#email,
+#phone,
+#pass {
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 3px;
+  color: #727272;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#log_frm {
+  margin-top: 50px;
+}
+#sign_frm {
+  margin-top: 30px;
+}
+#log_btn,
+#sign_btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  background: #bc4e9c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f80759,
+    #bc4e9c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f80759,
+    #bc4e9c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#log_in p,
+#signup p {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+#log_in span,
+#signup span {
+  color: blue;
+  cursor: pointer;
+}
+#signup {
+  display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url(contact.css);
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="profile_box">
+      <div id="aside"></div>
+      <div id="profile_pic"></div>
+      <h1 id="username">Default</h1>
+    </div>
+    <i class="fas fa-plus-circle" id="new_contact"></i>
+    <div id="main_all_contact_box">
+      <div id="contact_header">
+        <h1><i class="fas fa-user-circle"></i>All contacts</h1>
+        <input type="search" id="search" placeholder="Search your contact" />
+      </div>
+      <div id="all_contact_box"></div>
+    </div>
+
+    <div id="contact_bg" class="animate__animated animate__fadeIn">
+      <center>
+        <div
+          id="add_contact_box"
+          class="animate__animated animate__slideInDown"
+        >
+          <h1 id="c_heading">Add new contact</h1>
+          <form action="#">
+            <input type="text" placeholder="Enter name" id="c_name" />
+            <input type="tel" placeholder="Enter mobile number" id="c_num" />
+            <button type="submit" id="add">Add</button>
+            <button type="button" id="close">Close</button>
+          </form>
+        </div>
+      </center>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>
